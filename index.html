@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+<style>
+  .m-auto{
+    margin:50px 50px;
+  }
+</style>
+<div class="container" id="invoice">
+
+  <h2 class="text-center  m-auto">MULTI PIE UPDATE CHECK LIST</h2>
+
+  <button onclick="download_pdf()">Download</button>
+  <form action="">
+    <div class="form-group">
+
+      <div class="row">
+        <div  class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-4">
+              <h4>Party Name</h4>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="pwd" placeholder="Enter Party Name" >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <h4>Machine NO</h4>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="pwd" placeholder="Enter Machine No" >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <h4>Date</h4>
+            </div>
+            <div class="col-sm-6">
+              <input type="date" class="form-control" id="pwd"  >
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-4">
+              <h4>Engineer Name</h4>
+            </div>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="pwd" placeholder="Enter Engineer Name" >
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>Servo Drive</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+            <label><input type="radio" name="remember" style="margin:10px;">Estun</label>
+            <label><input type="radio" name="remember" style="margin:10px;">Leadshine</label> <br>
+            <label><input type="radio" name="remember" style="margin:10px;">Fuji</label>
+            <label><input type="radio" name="remember" style="margin:10px;">Schneider</label>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>CPU</h4>
+        </div>
+        <div class="col-sm-4">
+            <div class="form-group">
+
+              <select id="inputState" class="form-control">
+                <option selected="">Choose Motherboard</option>
+                            <option>Gigabyte</option>
+                            <option>Lenovo</option>
+                            <option>HP</option>
+                            <option>Dell</option>
+              </select>
+            </div>
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+
+            <select id="inputState" class="form-control">
+              <option selected="">CHOOSE PCI SLOT</option>
+                          <option>1</option>
+                          <option>2</option>
+                          <option>3</option>
+                          <option>4</option>
+            </select>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-2">
+        <h4>Hasp No</h4>
+      </div>
+      <div class="col-sm-2">
+        <input type="text" class="form-control" id="pwd" placeholder="Enter Hasp No" >
+      </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>WSD Device</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+              <label><input type="radio" name="wsdnm" style="margin:10px;">YES</label>
+            <label><input type="radio" name="wsdnm" style="margin:10px;">NO</label>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>U Device</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+              <label><input type="radio" name="Unm" style="margin:10px;">YES</label>
+            <label><input type="radio" name="Unm" style="margin:10px;">NO</label>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>Motion Card</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+              <label><input type="radio" name="mnm" style="margin:10px;">Smotion</label>
+            <label><input type="radio" name="mnm" style="margin:10px;">GT</label>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>BDS Plate (WSD Hole)</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+              <label><input type="radio" name="holenm" style="margin:10px;">YES</label>
+            <label><input type="radio" name="holenm" style="margin:10px;">NO</label>
+          </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>Expander</h4>
+        </div>
+        <div class="col-sm-2">
+          <div class="form-group">
+            <select id="inputState" class="form-control">
+              <option selected="">Choose Expander</option>
+                          <option>10 X</option>
+                          <option>8 X</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-sm-2">
+          <input type="text" class="form-control" id="pwd" placeholder="Enter Manual(Optional)" >
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>Fixture Proxy</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+              <label><input type="radio" name="fixnm" style="margin:10px;">YES</label>
+            <label><input type="radio" name="fixnm" style="margin:10px;">NO</label>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>X Axis Play</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+              <label><input type="radio" name="Xnm" style="margin:10px;">YES</label>
+            <label><input type="radio" name="Xnm" style="margin:10px;">NO</label>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>Y Axis Play</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+              <label><input type="radio" name="Ynm" style="margin:10px;">YES</label>
+            <label><input type="radio" name="Ynm" style="margin:10px;">NO</label>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>Z Axis Play</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+              <label><input type="radio" name="Znm" style="margin:10px;">YES</label>
+            <label><input type="radio" name="Znm" style="margin:10px;">NO</label>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>Focal Bellows</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+              <label><input type="radio" name="F-b-nm" style="margin:10px;">YES</label>
+            <label><input type="radio" name="F-b-nm" style="margin:10px;">NO</label>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>WSL Plate</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+              <label><input type="radio" name="W-p-nm" style="margin:10px;">YES</label>
+            <label><input type="radio" name="W-p-nm" style="margin:10px;">NO</label>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>Collet Size</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+              <label><input type="radio" name="collet-s" style="margin:10px;">5</label>
+            <label><input type="radio" name="collet-s" style="margin:10px;">5.5</label>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <h4>Earthing</h4>
+      </div>
+      <div class="col-sm-2">
+        <input type="text" class="form-control" id="pwd" placeholder="Enter Earthing" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <h4>Max Watt</h4>
+      </div>
+      <div class="col-sm-2">
+        <input type="text" class="form-control" id="pwd" placeholder="Enter Watt" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <h4>Amp</h4>
+      </div>
+      <div class="col-sm-2">
+        <input type="text" class="form-control" id="pwd" placeholder="Enter Amp." >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <h4>Voltage</h4>
+      </div>
+      <div class="col-sm-2">
+        <input type="text" class="form-control" id="pwd" placeholder="Enter Voltage" >
+      </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2">
+            <h4>RF</h4>
+        </div>
+        <div class="col-sm-4">
+          <div class="checkbox">
+              <label><input type="radio" name="rf-nm" style="margin:10px;">Sintech</label>
+            <label><input type="radio" name="rf-nm" style="margin:10px;">Canpower</label>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <h4>Diode</h4>
+      </div>
+      <div class="col-sm-2">
+        <input type="text" class="form-control" id="pwd" placeholder="Enter Diode Name" >
+      </div>
+      <div class="col-sm-2">
+        <input type="date" class="form-control" id="pwd" placeholder="Enter Date" >
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-2">
+        <h4>Remark</h4>
+      </div>
+      <div class="col-sm-4">
+        <textarea name="name" rows="4" cols="160" placeholder="Enter Description" class="form-control"></textarea>
+      </div>
+    </div>
+
+  </form>
+</div>
+<script type="text/javascript">
+    function download_pdf(){
+      const pdf = document.getElementById("invoice");
+      html2pdf().from(pdf).save();
+    }
+</script>
+</body>
+</html>
