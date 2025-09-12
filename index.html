@@ -15,8 +15,294 @@
   .m-auto{
     margin:50px 50px;
   }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  table, th{
+  padding-left:20px;
+  }
+  input , select{
+    border:none;
+    padding-left:20px;
+  }
 </style>
-<div class="container" id="invoice">
+
+<div class="container mt-3" id="invoice">
+  <h2 class="text-center">MULTI PIE UPDATE CHECK LIST</h2>
+  <br>
+  <!-- <p>The .table class adds basic styling (light padding and horizontal dividers) to a table:</p> -->
+<center>  <table style="width:50%">
+    <thead>
+      <tr>
+        <th>
+          <label for="">Party Name</label>
+        </th>
+        <td>
+            <input type="text" name="" value="" placeholder="Enter Party Name" style="width:100%"  />
+        </td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>
+          <label for="">Machine No</label>
+        </th>
+        <td>
+            <input type="text" name="" value="" placeholder="Enter Machine No" style="width:100%"  />
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Date</label>
+        </th>
+        <td>
+            <input type="date" name="" value="" placeholder="Enter Party Name" style="width:100%"  />
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Engineer Name</label>
+        </th>
+        <td>
+            <input type="text" name="" value="" placeholder="Enter Engineer Name" style="width:100%"  />
+        </td>
+      </tr>
+
+      <tr>
+        <th>
+          <label for="">Servo Drive</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option selected="">Choose Drive</option>
+            <option value="">Estun</option>
+            <option value="">Leadshine</option>
+            <option value="">Fuji</option>
+            <option value="">Schneider</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">CPU</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option selected="">Choose Motherboard</option>
+            <option value="">GIGABYTE</option>
+            <option value="">LENOVO</option>
+            <option value="">HP</option>
+            <option value="">DELL</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Hasp No</label>
+        </th>
+        <td>
+            <input type="text" name="" value="" placeholder="Enter Hasp No" style="width:100%"  />
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">WSD Device</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">YES</option>
+            <option value="">NO</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">U Device</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">YES</option>
+            <option value="">NO</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Motion Card</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">Smotion</option>
+            <option value="">GT</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">BDS Plate(WSD Hole)</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">YES</option>
+            <option value="">NO</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Expander</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">10 X</option>
+            <option value="">8 X</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Fixture Proxy</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">YES</option>
+            <option value="">NO</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">X Axis Play</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">YES</option>
+            <option value="">NO</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Y Axis Play</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">YES</option>
+            <option value="">NO</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Z Axis Play</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">YES</option>
+            <option value="">NO</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Focal Bellows</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">YES</option>
+            <option value="">NO</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">WSL Plate</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">YES</option>
+            <option value="">NO</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Collet Size</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">YES</option>
+            <option value="">NO</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Earthing</label>
+        </th>
+        <td>
+            <input type="text" name="" value="" placeholder="Enter Earthing" style="width:100%"  />
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Max Watt</label>
+        </th>
+        <td>
+            <input type="text" name="" value="" placeholder="Enter Max Watt" style="width:100%"  />
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Amp</label>
+        </th>
+        <td>
+            <input type="text" name="" value="" placeholder="Enter Amp" style="width:100%"  />
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">Voltage</label>
+        </th>
+        <td>
+            <input type="text" name="" value="" placeholder="Enter Voltage" style="width:100%"  />
+        </td>
+      </tr>
+      <tr>
+        <th>
+          <label for="">RF</label>
+        </th>
+        <td>
+          <select class="" name="">
+            <option value="">Sintech</option>
+            <option value="">Canpower</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th rowspan="2">
+          <label for="">Diode</label>
+        </th>
+        <td>
+            <input type="text" name="" value="" placeholder="Enter Diode" style="width:100%"  />
+        </td>
+      </tr>
+      <tr>
+
+        <td>
+            <input type="date" name="" value="" placeholder="Enter Diode" style="width:100%"  />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+  <button onclick="download_pdf()">Download</button>
+</center>
+</div>
+
+
+<div class="container hide" id="invoice">
 
   <h2 class="text-center  m-auto">MULTI PIE UPDATE CHECK LIST</h2>
 
