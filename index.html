@@ -335,11 +335,14 @@ table, th {
 <script type="text/javascript">
     function download_pdf(){
       const pdf = document.getElementById("invoice");
+      console.log(pdf);
+      exit();
       html2pdf().from(pdf).save();
     }
 </script>
 </body>
 </html>
+
 
 
 
