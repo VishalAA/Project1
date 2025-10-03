@@ -68,7 +68,7 @@ table, th {
           <label for="">Party Name</label>
         </th>
         <td>
-            <input type="text" name="" value="" placeholder="Enter Party Name" style="width:100%"  />
+            <input type="text" name="" id="party-name" value="" placeholder="Enter Party Name" style="width:100%"  />
         </td>
       </tr>
     </thead>
@@ -78,7 +78,7 @@ table, th {
           <label for="">Machine No</label>
         </th>
         <td>
-            <input type="text" name="" value="" placeholder="Enter Machine No" style="width:100%"  />
+            <input type="text" name="" id="machine-no" value="" placeholder="Enter Machine No" style="width:100%"  />
         </td>
       </tr>
       <tr>
@@ -86,7 +86,7 @@ table, th {
           <label for="">Date</label>
         </th>
         <td>
-            <input type="date" name="" value="" placeholder="Enter Party Name"  />
+            <input type="date" name="" id="party-date" value="" placeholder="Enter Date"  />
         </td>
       </tr>
       <tr>
@@ -94,7 +94,7 @@ table, th {
           <label for="">Engineer Name</label>
         </th>
         <td>
-            <input type="text" name="" value="" placeholder="Enter Engineer Name" style="width:100%"  />
+            <input type="text" name="" id="eng-name" value="" placeholder="Enter Engineer Name" style="width:100%"  />
         </td>
       </tr>
 
@@ -103,12 +103,12 @@ table, th {
           <label for="">Servo Drive</label>
         </th>
         <td>
-          <select class="" name="">
+          <select class="" name="" id="servo-drive">
             <option selected="">Choose Drive</option>
-            <option value="">Estun</option>
-            <option value="">Leadshine</option>
-            <option value="">Fuji</option>
-            <option value="">Schneider</option>
+            <option value="Estun">Estun</option>
+            <option value="Leadshine">Leadshine</option>
+            <option value="Fuji">Fuji</option>
+            <option value="Schneider">Schneider</option>
           </select>
         </td>
       </tr>
@@ -117,12 +117,12 @@ table, th {
           <label for="">CPU</label>
         </th>
         <td>
-          <select class="" name="">
+          <select class="" name="" id="cpu">
             <option selected="">Choose Motherboard</option>
-            <option value="">GIGABYTE</option>
-            <option value="">LENOVO</option>
-            <option value="">HP</option>
-            <option value="">DELL</option>
+            <option value="GIGABYTE">GIGABYTE</option>
+            <option value="LENOVO">LENOVO</option>
+            <option value="HP">HP</option>
+            <option value="DELL">DELL</option>
           </select>
         </td>
       </tr>
@@ -131,7 +131,7 @@ table, th {
           <label for="">Hasp No</label>
         </th>
         <td>
-            <input type="text" name="" value="" placeholder="Enter Hasp No" style="width:100%"  />
+            <input type="text" name="" id="hasp-no" value="" placeholder="Enter Hasp No" style="width:100%"  />
         </td>
       </tr>
       <tr>
@@ -139,9 +139,9 @@ table, th {
           <label for="">WSD Device</label>
         </th>
         <td>
-          <select class="" name=""  >
-            <option value="">YES</option>
-            <option value="">NO</option>
+          <select class="" name=""  id="WSD-Device">
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
           </select>
         </td>
       </tr>
@@ -150,9 +150,9 @@ table, th {
           <label for="">U Device</label>
         </th>
         <td>
-          <select class="" name="">
-            <option value="">YES</option>
-            <option value="">NO</option>
+          <select class="" name=""   id="U-Device">
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
           </select>
         </td>
       </tr>
@@ -161,9 +161,9 @@ table, th {
           <label for="">Motion Card</label>
         </th>
         <td>
-          <select class="" name="">
-            <option value="">Smotion</option>
-            <option value="">GT</option>
+          <select class="" name=""    id="Motion-card">
+            <option value="Smotion">Smotion</option>
+            <option value="GT">GT</option>
           </select>
         </td>
       </tr>
@@ -172,9 +172,9 @@ table, th {
           <label for="">BDS Plate(WSD Hole)</label>
         </th>
         <td>
-          <select class="" name="">
-            <option value="">YES</option>
-            <option value="">NO</option>
+          <select class="" name="" id="BDS-plate">
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
           </select>
         </td>
       </tr>
@@ -183,9 +183,9 @@ table, th {
           <label for="">Expander</label>
         </th>
         <td>
-          <select class="" name="">
-            <option value="">10 X</option>
-            <option value="">8 X</option>
+          <select class="" name="" id="Expander">
+            <option value="10 X">10 X</option>
+            <option value="8 X">8 X</option>
           </select>
         </td>
       </tr>
@@ -194,9 +194,9 @@ table, th {
           <label for="">Fixture Proxy</label>
         </th>
         <td>
-          <select class="" name="">
-            <option value="">YES</option>
-            <option value="">NO</option>
+          <select class="" name="" id="Fixture Proxy">
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
           </select>
         </td>
       </tr>
@@ -205,9 +205,9 @@ table, th {
           <label for="">X Axis Play</label>
         </th>
         <td>
-          <select class="" name="">
-            <option value="">YES</option>
-            <option value="">NO</option>
+          <select class="" name="" id="X-Axis">
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
           </select>
         </td>
       </tr>
@@ -216,9 +216,9 @@ table, th {
           <label for="">Y Axis Play</label>
         </th>
         <td>
-          <select class="" name="">
-            <option value="">YES</option>
-            <option value="">NO</option>
+          <select class="" name="" id="X-Axis">
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
           </select>
         </td>
       </tr>
@@ -227,9 +227,9 @@ table, th {
           <label for="">Z Axis Play</label>
         </th>
         <td>
-          <select class="" name="">
-            <option value="">YES</option>
-            <option value="">NO</option>
+          <select class="" name="" id="Z-Axis">
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
           </select>
         </td>
       </tr>
@@ -238,9 +238,9 @@ table, th {
           <label for="">Focal Bellows</label>
         </th>
         <td>
-          <select class="" name="">
-            <option value="">YES</option>
-            <option value="">NO</option>
+          <select class="" name="" id="focal-bellows">
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
           </select>
         </td>
       </tr>
@@ -249,9 +249,9 @@ table, th {
           <label for="">WSL Plate</label>
         </th>
         <td>
-          <select class="" name="">
-            <option value="">YES</option>
-            <option value="">NO</option>
+          <select class="" name="" id="wsl-plate">
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
           </select>
         </td>
       </tr>
@@ -260,9 +260,9 @@ table, th {
           <label for="">Collet Size</label>
         </th>
         <td>
-          <select class="" name="">
-            <option value="">YES</option>
-            <option value="">NO</option>
+          <select class="" name="" id="collet-size">
+            <option value="YES">YES</option>
+            <option value="NO">NO</option>
           </select>
         </td>
       </tr>
@@ -271,7 +271,7 @@ table, th {
           <label for="">Earthing</label>
         </th>
         <td>
-            <input type="text" name="" value="" placeholder="Enter Earthing" style="width:100%"  />
+            <input type="text" name="" value="" id="Earthing" placeholder="Enter Earthing" style="width:100%"  />
         </td>
       </tr>
       <tr>
@@ -279,7 +279,7 @@ table, th {
           <label for="">Max Watt</label>
         </th>
         <td>
-            <input type="text" name="" value="" placeholder="Enter Max Watt" style="width:100%"  />
+            <input type="text" name="" value="" id="max-watt" placeholder="Enter Max Watt" style="width:100%"  />
         </td>
       </tr>
       <tr>
@@ -287,7 +287,7 @@ table, th {
           <label for="">Amp</label>
         </th>
         <td>
-            <input type="text" name="" value="" placeholder="Enter Amp" style="width:100%"  />
+            <input type="text" name="" value="" id="amp" placeholder="Enter Amp" style="width:100%"  />
         </td>
       </tr>
       <tr>
@@ -295,7 +295,7 @@ table, th {
           <label for="">Voltage</label>
         </th>
         <td>
-            <input type="text" name="" value="" placeholder="Enter Voltage" style="width:100%"  />
+            <input type="text" name="" value="" id="voltage" placeholder="Enter Voltage" style="width:100%"  />
         </td>
       </tr>
       <tr>
@@ -303,9 +303,9 @@ table, th {
           <label for="">RF</label>
         </th>
         <td>
-          <select class="" name="">
-            <option value="">Sintech</option>
-            <option value="">Canpower</option>
+          <select class="" name="" id="rf">
+            <option value="Sintech">Sintech</option>
+            <option value="Canpower">Canpower</option>
           </select>
         </td>
       </tr>
@@ -314,13 +314,13 @@ table, th {
           <label for="">Diode</label>
         </th>
         <td>
-            <input type="text" name="" value="" placeholder="Enter Diode" style="width:100%"  />
+            <input type="text" name="" value="" id="diode" placeholder="Enter Diode" style="width:100%"  />
         </td>
       </tr>
       <tr>
 
         <td>
-            <input type="date" name="" value="" placeholder="Enter Diode"  />
+            <input type="date" name="" id="d-date" value="" placeholder="Enter Diode"  />
         </td>
       </tr>
     </tbody>
@@ -341,6 +341,7 @@ table, th {
 </script>
 </body>
 </html>
+
 
 
 
